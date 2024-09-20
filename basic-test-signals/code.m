@@ -1,6 +1,5 @@
-% Adjust time vectors for better comparison
-t = -5:0.01:5;    % Continuous time vector (higher resolution)
-n = -5:0.1:5;       % Discrete time vector (lower resolution, matching parts of t)
+t = -5:0.01:5;    % Continuous time vector 
+n = -5:0.1:5;       % Discrete time vector 
 
 figure;
 
