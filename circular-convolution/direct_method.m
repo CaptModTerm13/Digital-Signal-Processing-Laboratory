@@ -1,7 +1,8 @@
-x=[1,2,3,5];
-h=[1,1,1]
-disp("Convolution of X and H")
-y=conv(x,h)
+x = [1, 2, 3, 4];
+h = [1,1,1];
+N=max(length(x),length(h));
+disp('Convolution result using matrix method:');
+y=cconv(x,h,N)
 % Plot the sequences
 n_x = 0:length(x)-1;  % Time indices for x
 n_h = 0:length(h)-1;  % Time indices for h
@@ -28,3 +29,4 @@ title('Convolution y[n] = x[n] * h[n]');
 xlabel('n');
 ylabel('y[n]');
 grid on;
+
