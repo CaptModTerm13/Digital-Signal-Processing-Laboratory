@@ -15,3 +15,24 @@ Y = ifft(X .* H);
 
 disp('Circular convolution result using FFT:');
 disp(Y);
+n_x=0:length(x)-1;
+n_h=0:length(h)-1;
+n_y=0:length(Y)-1;
+figure;
+subplot(3,1,1);
+stem(n_x,x,'filled');
+title('Signal x[n]');
+xlabel('n');
+ylabel('x[n]');
+grid on;
+subplot(3,1,2);
+stem(n_h,h,"filled");
+title('Signal h[n]');
+xlabel('n');
+ylabel('h[n]');
+subplot(3,1,3);
+stem(n_y,Y,"filled");
+title('Linear conv of x[n],h[n]');
+xlabel('n');
+ylabel('x[n]*h[n]');
+
