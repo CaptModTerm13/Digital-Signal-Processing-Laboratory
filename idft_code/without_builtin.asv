@@ -9,7 +9,7 @@ for k=0:length(x_fft)-1
 end
 x=(1/length(x_fft))*x
 abs(x)
-stem(0:length(x)-1,abs(x));
+stem(0:length(X_fft)-1,abs(X_fft));
 xlabel('frequency');
 ylabel('Magnitude');
-title('IDFT of x');
+title('DFT of x');

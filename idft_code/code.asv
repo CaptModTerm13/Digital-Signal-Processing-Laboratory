@@ -5,4 +5,4 @@ x=ifft(x_fft)
 stem(0:length(x)-1,abs(x));
 xlabel('frequency');
 ylabel('Magnitude');
-title('IDFT of x');
+title('DFT of x');
