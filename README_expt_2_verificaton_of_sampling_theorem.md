@@ -33,8 +33,25 @@ This theorem ensures that, given a sufficiently high sampling rate (at least twi
 
 3. **Reconstruction**: If a signal is sampled above the Nyquist rate, it can be reconstructed perfectly using interpolation techniques, such as the **sinc interpolation** formula.
 
-### Implications of the Sampling Theorem:
+### Applications of the Sampling Theorem
 
-- In **audio** processing, for example, if the maximum frequency a human can hear is about 20 kHz, then the signal must be sampled at least at 40 kHz (which is why the standard CD quality audio sampling rate is 44.1 kHz).
-  
-- In **digital image processing**, sampling rates affect the resolution and quality of digital images.
+
+#### 1. **Digital Audio**
+* **CD Audio:** CDs store audio signals as a series of discrete samples. The sampling rate of 44.1 kHz is chosen to adhere to the Nyquist-Shannon sampling theorem, ensuring high-quality audio reproduction.
+* **MP3 Encoding:** MP3 compression techniques exploit the human auditory system's sensitivity to certain frequencies and discard redundant information to reduce file size without significantly affecting perceived audio quality. However, the underlying principle of sampling remains crucial.
+
+#### 2. **Image Processing**
+* **Digital Cameras:** Cameras capture images by sampling the light intensity at discrete points on the sensor. The resolution (number of pixels) determines the sampling rate, and a higher resolution is necessary to capture finer details.
+* **Image Compression:** Techniques like JPEG compression exploit the redundancy in image data and reduce the number of samples while maintaining visual quality.
+
+#### 3. **Telecommunications**
+* **Analog-to-Digital Conversion (ADC):** ADCs convert analog signals (like voice or data) into digital signals for transmission over digital networks. The sampling rate of the ADC must be high enough to avoid aliasing, which can introduce distortion.
+* **Digital-to-Analog Conversion (DAC):** DACs convert digital signals back into analog form for output devices. The reconstruction filter in a DAC ensures that the reconstructed signal adheres to the sampling theorem.
+
+#### 4. **Medical Imaging**
+* **MRI:** Magnetic Resonance Imaging scans acquire data by sampling the magnetic field response of the body. The sampling rate determines the spatial resolution of the image.
+* **CT Scans:** Computed Tomography scans use X-rays to create cross-sectional images of the body. The sampling rate of the X-ray detector affects the image quality and resolution.
+
+#### 5. **Control Systems**
+* **Data Acquisition:** Control systems often require sampling of physical processes (like temperature, pressure, or position) to monitor and control them. The sampling rate must be fast enough to capture the relevant dynamics of the system.
+
