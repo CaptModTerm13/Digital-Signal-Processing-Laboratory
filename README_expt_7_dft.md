@@ -7,7 +7,7 @@ The Discrete Fourier Transform (DFT) is a mathematical operation that decomposes
 Given a sequence of `N` complex numbers, `x[n]`, where `n = 0, 1, ..., N-1`, the DFT is defined as:
 
 ```
-X[k] = ∑{n=0}^{N-1} x[n] * e^(-j*2π*n*k/N)
+X[k] = ∑_{n=0}^{N-1} x[n] * e^(-j*2π*n*k/N)
 ```
 
 where:
