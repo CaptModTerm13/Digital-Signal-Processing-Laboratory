@@ -1,5 +1,5 @@
 x = [1, 2, 3, 4];
-h = [1,1,1];
+h = [1, 1, 1];
 N=max(length(x),length(h));
 disp('Convolution result using matrix method:');
 y=cconv(x,h,N)
