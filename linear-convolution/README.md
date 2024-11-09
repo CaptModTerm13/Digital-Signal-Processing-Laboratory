@@ -39,3 +39,13 @@ Linear convolution can be implemented using various methods, including:
 * **Direct Computation:** Using the mathematical definition directly.
 * **Fast Fourier Transform (FFT):** Using FFT to convert signals to the frequency domain, perform multiplication, and then convert back to the time domain. This is efficient for large signals.
 * **Convolution Theorem:** Leveraging the convolution theorem to perform convolution in the frequency domain.
+
+## OBSERVATION
+
+Convolution of X and H (Direct method and matrix method)
+
+1   3   6   10   8   5
+
+![Screenshot (16)](https://github.com/user-attachments/assets/40b7d1d5-f039-4eee-ab94-13abbfed29a2)
+
+
