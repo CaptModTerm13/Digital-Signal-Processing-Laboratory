@@ -41,6 +41,16 @@ Circular convolution can be implemented using:
 
 Convolution result using matrix method:
 
+8     7     6     9
+
 ![Screenshot (8)](https://github.com/user-attachments/assets/e1a2e49d-6ff6-4e92-8623-c5fa99306809)
+
+Convolution result using matrix method:
+ 
+ 8     7     6     9
+
+ ![Screenshot (9)](https://github.com/user-attachments/assets/5dd28833-42ef-4249-9716-6d775c7f2225)
+
+
 
 
