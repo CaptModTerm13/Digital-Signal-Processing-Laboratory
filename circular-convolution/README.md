@@ -36,3 +36,11 @@ Circular convolution can be implemented using:
 
 * **Direct Computation:** Using the mathematical definition.
 * **FFT:** Using the fast Fourier transform (FFT) to convert signals to the frequency domain, perform element-wise multiplication, and then convert back to the time domain. This is efficient for large signals.
+
+## OBSERVATION
+
+Convolution result using matrix method:
+
+![Screenshot (8)](https://github.com/user-attachments/assets/e1a2e49d-6ff6-4e92-8623-c5fa99306809)
+
+
