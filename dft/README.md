@@ -37,3 +37,19 @@ where:
 #### Fast Fourier Transform (FFT)
 
 The Fast Fourier Transform (FFT) is an efficient algorithm for computing the DFT. It reduces the computational complexity from `O(N^2)` to `O(N log N)`, making it practical for large sequences.
+
+## OBSERVATION
+
+Using built-in function:
+
+Dft of x[n] is: 10.0000 + 0.0000i  -2.0000 + 2.0000i  -2.0000 + 0.0000i  -2.0000 - 2.0000i
+
+![Screenshot (10)](https://github.com/user-attachments/assets/54882946-de96-49ba-8002-9d3a91d1a4eb)
+
+Without built-in function:
+
+DFT of x[n] is: 10.0000 + 0.0000i  -2.0000 + 2.0000i  -2.0000 + 0.0000i  -2.0000 - 2.0000i
+
+![Screenshot (11)](https://github.com/user-attachments/assets/7d56568e-808d-4cd6-adf1-aa0cd7a997df)
+
+
