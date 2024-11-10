@@ -33,3 +33,32 @@ The IDFT is the inverse operation of the DFT. This means that if you take the DF
 * **Filtering:** Applying filters to a signal in the frequency domain and then using the IDFT to obtain the filtered time-domain signal.
 * **Image Processing:** Image reconstruction from frequency-domain data.
 * **Communications:** Demodulation of signals.
+
+## OBSERVATION
+
+Using built-in function:
+
+Inverse fourier transform of the sequence
+
+![Screenshot (14)](https://github.com/user-attachments/assets/dc1a0c27-963a-4e5f-b7a6-eef38e0637d2)
+
+is  1  2  3  4
+
+![Screenshot (13)](https://github.com/user-attachments/assets/0d981db1-fb57-44e2-8a2b-0a0f652cae52)
+
+Without built-in function:
+
+Inverse fourier transform of the sequence
+
+![Screenshot (14)](https://github.com/user-attachments/assets/dc1a0c27-963a-4e5f-b7a6-eef38e0637d2)
+
+is  1  2  3  4
+
+![Screenshot (13)](https://github.com/user-attachments/assets/0d981db1-fb57-44e2-8a2b-0a0f652cae52)
+
+
+
+
+
+
+

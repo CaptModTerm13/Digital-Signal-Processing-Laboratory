@@ -48,9 +48,14 @@ This theorem ensures that, given a sufficiently high sampling rate (at least twi
 * **Analog-to-Digital Conversion (ADC):** ADCs convert analog signals (like voice or data) into digital signals for transmission over digital networks. The sampling rate of the ADC must be high enough to avoid aliasing, which can introduce distortion.
 * **Digital-to-Analog Conversion (DAC):** DACs convert digital signals back into analog form for output devices. The reconstruction filter in a DAC ensures that the reconstructed signal adheres to the sampling theorem.
 
+
 #### 4. **Medical Imaging**
 * **MRI:** Magnetic Resonance Imaging scans acquire data by sampling the magnetic field response of the body. The sampling rate determines the spatial resolution of the image.
 * **CT Scans:** Computed Tomography scans use X-rays to create cross-sectional images of the body. The sampling rate of the X-ray detector affects the image quality and resolution.
 
 #### 5. **Control Systems**
 * **Data Acquisition:** Control systems often require sampling of physical processes (like temperature, pressure, or position) to monitor and control them. The sampling rate must be fast enough to capture the relevant dynamics of the system.
+
+## OBSERVATION
+![Screenshot (5)](https://github.com/user-attachments/assets/8c1554d4-6fe6-4779-a6f9-ccff412d5226)
+

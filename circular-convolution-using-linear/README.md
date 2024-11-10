@@ -31,3 +31,10 @@ The theory behind finding circular convolution using linear convolution is based
 * **Relationship:**
    - When the signals are zero-padded to a length `L` ≥ `M + N - 1`, the linear convolution effectively captures the circular nature of the operation.
    - The `mod N` operation in circular convolution ensures that the indices stay within the range `0` to `N-1`, preventing "wrap-around" effects.
+
+## OBSERVATION
+
+circular Convolved sequence
+
+![Screenshot (7)](https://github.com/user-attachments/assets/4a516bca-ff69-4bd6-af5f-d92a2f9ce1b2)
+
