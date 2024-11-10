@@ -1,6 +1,5 @@
 clc;
-clear all;
-close all;
+clear;
 
 % Bandpass Filter Design using different windows
 
@@ -41,6 +40,7 @@ title('Bandpass Filter using Rectangular Window');
 xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('Magnitude (dB)');
 grid on;
+legend('Rectangular');
 
 % Hamming Window
 wr_hm = hamming(N);
@@ -56,6 +56,7 @@ title('Bandpass Filter using Hamming Window');
 xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('Magnitude (dB)');
 grid on;
+legend('Hamming');
 
 % Hanning Window
 wr_hn = hanning(N);
@@ -71,6 +72,7 @@ title('Bandpass Filter using Hanning Window');
 xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('Magnitude (dB)');
 grid on;
+legend('Hanning');
 
 % Bartlett Window
 wr_bart = bartlett(N);
@@ -86,3 +88,4 @@ title('Bandpass Filter using Bartlett Window');
 xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('Magnitude (dB)');
 grid on;
+legend('Bartlett'); 
