@@ -1,105 +1,69 @@
-clc;
-clear all;
-close all;
-% Using Rectangular windowing
 wc = 0.5*pi;
-N = input('Enter the order:');
+N=50;
 alpha = (N-1)/2;
-eps = 0.001;
-n = 0:1:N-1;
-hd = sin(wc*(n-alpha+eps)) ./ (pi*(n-alpha+eps));
-wr_b = boxcar(N);
-hn = hd .* wr_b';
-w = 0:0.01:pi;
-h = freqz(hn, 1, w);
-
-figure;
-subplot(3, 2, 1);
-stem(hd);
-title('Ideal Impulse Response (hd)');
-
-subplot(3, 2, 2);
-plot(w/pi, 10*log10(abs(h)));
-title('Magnitude Response (Rectangular)');
-xlabel('Normalized Frequency (\times\pi rad/sample)');
-ylabel('Magnitude (dB)');
-grid on;
-
-subplot(3, 2, 3);
-stem(wr_b);
-title('Rectangular Window');
-
-subplot(3, 2, 4);
-stem(hn);
-title('Impulse Response with Rectangular Window');
-
-subplot(3, 2, 5);
-h = freqz(hn, 1, w);
-plot(w/pi, 20*log10(abs(h)));
-title('Low-pass Filter using Rectangular Window');
-xlabel('Normalized Frequency (\times\pi rad/sample)');
-ylabel('Magnitude (dB)');
-grid on;
-
-% Using Hamming window
-wr_hm = hamming(N);
-hn_hm = hd .* wr_hm';
-
-figure;
-subplot(3, 2, 1);
-stem(wr_hm);
-title('Hamming Window');
-
-subplot(3, 2, 2);
-stem(hn_hm);
-title('Impulse Response with Hamming Window');
-
-subplot(3, 2, 3);
-hm = freqz(hn_hm, 1, w);
-plot(w/pi, 20*log10(abs(hm)));
-title('Low-pass Filter using Hamming Window');
-xlabel('Normalized Frequency (\times\pi rad/sample)');
-ylabel('Magnitude (dB)');
-grid on;
-
-% Using Hanning window
-wr_hn = hanning(N);
-hn_hn = hd .* wr_hn';
-
-figure;
-subplot(3, 2, 1);
-stem(wr_hn);
-title('Hanning Window');
-
-subplot(3, 2, 2);
-stem(hn_hn);
-title('Impulse Response with Hanning Window');
-
-subplot(3, 2, 3);
-hm = freqz(hn_hn, 1, w);
-plot(w/pi, 20*log10(abs(hm)));
-title('Low-pass Filter using Hanning Window');
-xlabel('Normalized Frequency (\times\pi rad/sample)');
-ylabel('Magnitude (dB)');
-grid on;
-
-% Using Bartlett Window
-wr_bart = bartlett(N);
-hn_bart = hd .* wr_bart';
-
-figure;
-subplot(3, 1, 1);
-stem(wr_bart);
-title('Bartlett Window');
-
-subplot(3, 1, 2);
-stem(hn_bart);
-title('Impulse Response with Bartlett Window');
-
-subplot(3, 1, 3);
-h_bart = freqz(hn_bart, 1, w);
-plot(w/pi, 20*log10(abs(h_bart)));
-title('Low-pass Filter using Bartlett Window');
-xlabel('Normalized Frequency (\times\pi rad/sample)');
-ylabel('Magnitude (dB)');
-grid on;
+n=0:1:N-1;
+hd=sin(wc*(n-alpha))./(pi*(n-alpha));
+%LPFhamming
+w1=hamming(N);
+hn=hd.*w1';
+w=0:0.01:pi;
+h1=freqz(hn,1,w);
+subplot(4,2,1);
+plot(w/pi,10*log10(abs(h1)));
+title('LPF using hamming window');
+xlabel('normalized frequency');
+ylabel('magnitude in db');
+%LPFhanning
+w2=hanning(N);
+hn=hd.*w2';
+w=0:0.01:pi;
+h2=freqz(hn,1,w);
+subplot(4,2,3);
+plot(w/pi,10*log10(abs(h2)));
+title('LPF using hanning window');
+xlabel('normalized frequency');
+ylabel('magnitude in db');
+%LPFrect
+w3=boxcar(N);
+hn=hd.*w3';
+w=0:0.01:pi;
+h3=freqz(hn,1,w);
+subplot(4,2,5);
+plot(w/pi,10*log10(abs(h3)));
+title('LPF using rectangular window');
+xlabel('normalized frequency');
+ylabel('magnitude in db');
+%LPFtri
+w4=bartlett(N);
+hn=hd.*w4';
+w=0:0.01:pi;
+h4=freqz(hn,1,w);
+subplot(4,2,7);
+plot(w/pi,10*log10(abs(h4)));
+title('LPF using triangular window');
+xlabel('normalized frequency');
+ylabel('magnitude in db');
+%hamming
+subplot(4,2,2);
+stem(w1);
+title('hamming window sequence');
+xlabel('no of samples');
+ylabel('amplitude');
+%hanning
+subplot(4,2,4);
+stem(w2);
+title('hanning window sequence');
+xlabel('no of samples');
+ylabel('amplitude');
+%rectangular
+subplot(4,2,6);
+stem(w3);
+title('rectangular window sequence');
+xlabel('no of samples');
+ylabel('amplitude');
+%triangular
+subplot(4,2,8);
+stem(w4);
+title('tirangular window sequence');
+xlabel('no of samples');
+ylabel('amplitude');
