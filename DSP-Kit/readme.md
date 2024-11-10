@@ -6,6 +6,7 @@ The objective of this lab is to familiarize students with the input and output p
 
 
 ### TMS320C674X DSP CPU Architecture
+![kit_cpu](https://github.com/user-attachments/assets/ab61dea6-f9b2-4741-bac7-913f45409f23)
 
 The TMS320C674X DSP CPU comprises:
 - **Eight Functional Units:** These include units dedicated to various operations:
@@ -30,9 +31,10 @@ The DSP board includes the **TLV320AIC23** codec, which:
 - Converts analog input signals to digital for DSP processing via the **ADC (Analog-to-Digital Converter)**.
 - Outputs processed signals back to the analog form using the **DAC (Digital-to-Analog Converter)**.
 - Handles all required filtering functions for clean analog output.
+![kit-2](https://github.com/user-attachments/assets/349d0f2c-c653-4c9c-9f1a-00ae12c51f12)
 
 ## Result
-Through this lab exercise, students will gain hands-on experience with the input and output ports of the DSP board and understand the processing flow from analog input to digital processing and back to analog output.
+Through this lab exercise, we gained hands-on experience with the input and output ports of the DSP board and understand the processing flow from analog input to digital processing and back to analog output.
 
 ## License
 This project is licensed under the MIT License.
