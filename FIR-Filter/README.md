@@ -5,7 +5,15 @@
 * **Impulse Response:** The impulse response of a filter is its output when the input is a unit impulse. It's a fundamental property that uniquely defines the filter's behavior.
 * **Transfer Function:** The transfer function, H(z), relates the output of a filter to its input in the z-domain. It's often used to analyze and design filters.
 
-**Types of Filters**
+## Types of Filters
+
+### Window Functions
+![image](https://github.com/user-attachments/assets/bf52b904-5e8d-4640-96e9-7a3db7f93f43)
+
+### Filters Functions
+![image](https://github.com/user-attachments/assets/182a3f66-2445-45a5-93b5-333218e5a37b)
+
+
 
 1. **Low-Pass Filter (LPF):**
    * **Frequency Response:** Passes low-frequency signals and attenuates high-frequency signals.
@@ -37,19 +45,19 @@
    * Infinite Impulse Response (IIR) filters
    * Digital Biquad filters
 
-# Observation
+## Observation
 
-## Low Pass filter
+### Low Pass filter
 ![image](https://github.com/user-attachments/assets/845928ee-562a-4cac-9571-e1a6c23f851c)
 
-## High Pass Filter
+### High Pass Filter
 ![image](https://github.com/user-attachments/assets/531ae474-ec9d-43a7-8b38-5758b0ac0cef)
 
-## Band Pass Filter
+### Band Pass Filter
 ![image](https://github.com/user-attachments/assets/7154e774-2d90-4bdf-af5c-c811f36128f9)
 
 
-## Band Stop Filter
+### Band Stop Filter
 ![image](https://github.com/user-attachments/assets/13eaf01a-6a5d-4d2c-8279-76c4b580be79)
 
 **Key Considerations in Filter Design**
