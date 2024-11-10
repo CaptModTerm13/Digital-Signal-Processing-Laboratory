@@ -1,0 +1,33 @@
+# MATLAB-specific files
+*.asv            # Autosave files
+*.m~             # Backup files
+*.mlx~           # Live script backup files
+*.mlappinstall   # MATLAB App Installer files
+*.mltbx          # MATLAB Toolbox files
+
+# Temporary and cache files
+*.asv            # Autosave files
+*.mlhistory      # Command History files
+*.mldatx         # Simulation cache files
+*.slxc           # Simulation cache files
+*.slxcsc         # Stateflow generated code
+*.mex*           # Compiled binaries
+
+# Project files
+*.prj            # Project files
+*.SimulinkCache  # Cache directory for Simulink models
+*.SimulinkCodeGen # Code generation cache for Simulink
+
+# User preference files
+*.matlab         # MATLAB desktop layout and preferences
+
+# Hidden files and directories
+.DS_Store        # macOS metadata files
+Thumbs.db        # Windows metadata files
+.idea/           # JetBrains IDE metadata
+.vscode/         # Visual Studio Code settings
+
+# Ignore output directories
+output/          # Example output directory
+simout/          # Example simulation output directory
+codegen/         # Code generation directory
